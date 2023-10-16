@@ -51,14 +51,17 @@ tailwind.config = {
         default: "0px 24px 61px -14px rgba(15, 151, 181, 0.14)",
         doctors: "0px 35px 55px -12px rgba(170, 71, 15, 0.26)",
       },
+
+      backgroundImage: {
+        calendar: "url('../img/calendar-form.svg')",
+        time: "url('../img/time-form.svg')",
+      },
     },
 
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1180px",
-      "2xl": "1180px",
+      sm: "366px",
+      md: "880px",
+      lg: "1180px",
     },
   },
 };
