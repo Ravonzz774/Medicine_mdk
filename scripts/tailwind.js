@@ -53,8 +53,8 @@ tailwind.config = {
       },
 
       backgroundImage: {
-        calendar: "url('../img/calendar-form.svg')",
-        time: "url('../img/time-form.svg')",
+        calendar: "url('./img/calendar-form.svg')",
+        time: "url('./img/time-form.svg')",
       },
     },
 
