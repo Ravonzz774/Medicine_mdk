@@ -7,3 +7,27 @@ body {
 .big-whiteSpaces {
   word-spacing: 30px;
 }
+
+.menu-button {
+  background: url("../img/menu_open.svg");
+}
+
+.menu-button.open {
+  background: url("../img/menu_close.svg");
+}
+
+.menu-block.open {
+  height: 100vh;
+  background: #f7fcfd;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body.open {
+  overflow: hidden;
+}
+
+.menu-links.open {
+  display: grid;
+}

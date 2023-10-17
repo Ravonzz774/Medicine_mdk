@@ -12,35 +12,62 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
     <script type="text/javascript" src="./scripts/tailwind.js" defer></script>
+
+    <script type="text/javascript" src="./scripts/menu.js" defer></script>
   </head>
 
-  <body>
+  <body class="body">
     <div class="bg-[#F7FCFD] w-full flex justify-center items-center">
       <div class="container">
-        <div class="flex justify-between py-5 header">
-          <div class="flex justify-start items-center gap-14">
-            <img src="./img/logo.svg" alt="" />
-            <div
-              class="flex justify-start items-center text-black/7 gap-8 sm:max-lg:hidden"
-            >
-              <a href="#">Home</a>
-              <a href="#">Our Services</a>
-              <a href="#">Blog</a>
-              <a href="#">About us</a>
-              <a href="#">Contact us</a>
+        <div class="flex flex-col menu-block">
+          <div class="flex justify-between py-5 header">
+            <div class="flex justify-start items-center gap-14">
+              <img src="./img/logo.svg" alt="" />
+              <div
+                class="flex justify-start items-center text-black/7 gap-8 sm:max-lg:hidden"
+              >
+                <a href="#">Home</a>
+                <a href="#">Our Services</a>
+                <a href="#">Blog</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+              </div>
             </div>
-          </div>
-          <div class="flex justify-end items-center sm:max-lg:hidden">
-            <a href="#" class="text-white bg-new_primary py-3 px-8 rounded-lg"
-              >Make Appointment</a
-            >
+            <div class="flex justify-end items-center sm:max-lg:hidden">
+              <a href="#" class="text-white bg-new_primary py-3 px-8 rounded-lg"
+                >Make Appointment</a
+              >
+            </div>
+
+            <a
+              href="#"
+              class="hidden sm:max-lg:block w-[42px] h-[42px] bg-no-repeat menu-button"
+            ></a>
           </div>
 
-          <a href="#" class="hidden sm:max-lg:block"
-            ><img src="./img/menu.svg" alt=""
-          /></a>
+          <div class="grid grid-cols-2 gap-y-[24px] w-[40%] pt-[25px] hidden menu-links">
+            <a href="#" class="text-[#e5661e] text-xl font-medium col-start-2 mr-[-100px]"
+              >Home</a
+            >
+            <a href="#" class="text-black/7 text-xl font-medium col-start-2 mr-[-100px]"
+              >Our Services</a
+            >
+            <a href="#" class="text-black/7 text-xl font-medium col-start-2 mr-[-100px]"
+              >Blog</a
+            >
+            <a href="#" class="text-black/7 text-xl font-medium col-start-2 mr-[-100px]"
+              >About us</a
+            >
+            <a href="#" class="text-black/7 text-xl font-medium col-start-2 mr-[-100px]"
+              >Contact us</a
+            >
+            <div class="flex row-start-1 col-start-1 justify-end items-center mr-[24px]">
+              <div class="bg-[#e5661e] w-[20px] h-[4px]  bg-center" ></div>
+            </div>
+            
+          </div>
         </div>
 
         <div
@@ -153,37 +180,80 @@
               Our Services
             </h2>
             <div class="flex justify-center items-center gap-3">
-              <a href="#"><img src="./img/arrow-left.svg" alt="" /></a>
-              <a href="#"><img src="./img/arrow-right.svg" alt="" /></a>
+              <a href="" class="slider-left-arrow-services"
+                ><img src="./img/arrow-left.svg" alt=""
+              /></a>
+              <a href="" class="slider-right-arrow-services"
+                ><img src="./img/arrow-right.svg" alt=""
+              /></a>
             </div>
           </div>
 
-          <div
-            class="grid grid-cols-3 grid-rows-1 gap-8 text-xl text-black font-medium md:max-lg:grid-cols-2 sm:max-md:grid-cols-1"
-          >
-            <div class="flex justify-start items-start flex-col gap-8">
-              <div
-                class="w-[372px] h-[282px] bg-[url('./img/service1.png')]"
-              ></div>
-              <h2 class="">Immediate Care</h2>
+          <div class="slider-services text-xl text-black font-medium w-full">
+            <div
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
+            >
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service1.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Immediate Care</h2>
+              </div>
             </div>
 
             <div
-              class="flex justify-start items-start flex-col gap-8 sm:max-md:hidden"
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
             >
-              <div
-                class="w-[372px] h-[282px] bg-[url('./img/service2.png')]"
-              ></div>
-              <h2 class="">Dental Care</h2>
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service2.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Dental Care</h2>
+              </div>
             </div>
 
             <div
-              class="flex justify-start items-start flex-col gap-8 sm:max-lg:hidden"
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
             >
-              <div
-                class="w-[372px] h-[282px] bg-[url('./img/service3.png')]"
-              ></div>
-              <h2 class="">Diagnostic Center</h2>
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service3.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Diagnostic Care</h2>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
+            >
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service2.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Dental Care</h2>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
+            >
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service3.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Diagnostic Care</h2>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center items-center flex-col gap-8 mx-4 sm:max-md:mx-5 sm:max-md:rounded-lg"
+            >
+              <div class="flex flex-col justify-start items-start">
+                <div
+                  class="w-[372px] h-[282px] bg-[url('./img/service2.png')] sm:max-md:w-[366px] sm:max-md:rounded-lg"
+                ></div>
+                <h2 class="">Dental Care</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -467,14 +537,18 @@
               Testimonials
             </h2>
             <div class="flex justify-center items-center gap-3">
-              <a href="#"><img src="./img/arrow-left.svg" alt="" /></a>
-              <a href="#"><img src="./img/arrow-right.svg" alt="" /></a>
+              <a href="" class="slider-left-arrow-testimonials"
+                ><img src="./img/arrow-left.svg" alt=""
+              /></a>
+              <a href="" class="slider-right-arrow-testimonials"
+                ><img src="./img/arrow-right.svg" alt=""
+              /></a>
             </div>
           </div>
 
-          <div class="grid grid-cols-2 grid-rows-1 gap-8 sm:max-md:grid-cols-1">
+          <div class="slider-testimonials">
             <div
-              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1"
+              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 mx-4 rounded-sm sm:max-md:w-[366px]"
             >
               <img src="./img/client1.png" alt="" />
               <div class="flex flex-col justify-start items-start">
@@ -496,7 +570,73 @@
             </div>
 
             <div
-              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 sm:max-md:hidden"
+              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 mx-4 rounded-sm sm:max-md:w-[366px]"
+            >
+              <img src="./img/client2.png" alt="" />
+              <div class="flex flex-col justify-start items-start">
+                <p class="text-black text-xl font-bold">Jordan Browler</p>
+                <div class="flex gap-1 pt-[12px] pb-[20px]">
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                </div>
+                <p class="text-black/8 text-[18px] rounded-sm">
+                  These guys are incredible to work with. Like seriously! They
+                  did everything so good, that I did not even imagine it would
+                  come up this awesome! Really looking forward to working with
+                  them again.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 mx-4 rounded-sm sm:max-md:w-[366px]"
+            >
+              <img src="./img/client2.png" alt="" />
+              <div class="flex flex-col justify-start items-start">
+                <p class="text-black text-xl font-bold">Jordan Browler</p>
+                <div class="flex gap-1 pt-[12px] pb-[20px]">
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                </div>
+                <p class="text-black/8 text-[18px] rounded-sm">
+                  These guys are incredible to work with. Like seriously! They
+                  did everything so good, that I did not even imagine it would
+                  come up this awesome! Really looking forward to working with
+                  them again.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 mx-4 rounded-sm sm:max-md:w-[366px]"
+            >
+              <img src="./img/client2.png" alt="" />
+              <div class="flex flex-col justify-start items-start">
+                <p class="text-black text-xl font-bold">Jordan Browler</p>
+                <div class="flex gap-1 pt-[12px] pb-[20px]">
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                  <img src="./img/star.svg" alt="" />
+                </div>
+                <p class="text-black/8 text-[18px] rounded-sm">
+                  These guys are incredible to work with. Like seriously! They
+                  did everything so good, that I did not even imagine it would
+                  come up this awesome! Really looking forward to working with
+                  them again.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-6 p-8 justify-start items-start bg-[#CF7D4E]/1 mx-4 rounded-sm sm:max-md:w-[366px]"
             >
               <img src="./img/client2.png" alt="" />
               <div class="flex flex-col justify-start items-start">
